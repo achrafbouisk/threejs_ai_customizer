@@ -1,9 +1,9 @@
 const config = {
   development: {
-    backendUrl: "https://dalle-image-server.onrender.com/api/v1/dalle",
+    backendUrl: import.meta.env.VITE_DEV_URL,
   },
   production: {
-    backendUrl: "https://dalle-image-server.onrender.com/api/v1/dalle",
+    backendUrl: import.meta.env.VITE_PROD_URL,
   },
 };
 
